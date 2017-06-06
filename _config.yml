@@ -3,12 +3,39 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Revol's Blog
+title: Revolution1
+SEOTitle: Revol's Blog          # check out docs for more detail
 subtitle: We all want to change the world
-description:
-author: revol
+description: Thoughts, codes, etc.
+author: Cai Renjie
 language: zh-CN
 timezone: Asia/Shanghai
+
+cdn-url: "http://or4eklid8.bkt.clouddn.com/"      # images cdn path
+
+# Qiniu imageView2 API
+clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
+clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+clip-post: "?" # you can custom post width and height
+clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+
+
+# Sidebar settings
+sidebar: true
+sidebar-about-description: "We all want to change the world"
+sidebar-avatar: http://or4eklid8.bkt.clouddn.com/logo.png
+
+#post default images
+post-default-img: http://or4eklid8.bkt.clouddn.com/post-default.jpg
+post-default-img-mobile: http://or4eklid8.bkt.clouddn.com/post-default.jpg
+
+featured-tags: true  
+featured-condition-size: 1     # A tag will be featured if the size of 	it is more than this condition value
+
+disqus_username: kyonr
+
+archive:
+  title: ARCHIVE
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -16,6 +43,14 @@ url: http://blog.kyonr.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+# SNS
+github_username: revolution1     # modify this account to yours
+weibo_username: 3185832602      # the footer woule be auto-updated.
+
+# live2d:
+#   model: nipsilon
+#   bottom: -60
 
 # Directory
 source_dir: source
@@ -73,7 +108,7 @@ deploy:
   type: git
   repo: git@github.com:Revolution1/revolution1.github.io.git
   branch: master
-  message: deploy
+  # message: deploy
   name: revolution1
   email: revol.cai@gmail.com
   # extend_dirs: [extend directory]
