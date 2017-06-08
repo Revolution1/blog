@@ -137,3 +137,5 @@ deploy:
   # extend_dirs: [extend directory]
   # ignore_hidden: false # default is true
   # ignore_pattern: regexp  # whatever file that matches the regexp will be ignored when deploying
+
+ga_track_id: UA-100695560-1
