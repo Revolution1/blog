@@ -4,7 +4,7 @@ header-img: restful-api-versioning-of-docker-engine.jpeg
 tags:
   - RESTful
   - Docker
-permalink: restful-api-version-management-policy-for-docker-engine
+permalink: restful-api-version-management-strategy-of-docker-engine
 date: 2017-06-07 00:02:51
 ---
 [Docker](https://github.com/moby/moby) 项目是一个标准的 C/S 架构，Docker Daemon（二进制为 dockerd） 作为 Server，其他诸如 Docker Client、docker-py 等则作为 Client。Daemon 提供了一套 RESTful API 供客户端使用。经过多年的发展，Docker 的版本号发生了大变革，变成了日期命名并且已经到了 17.05 版本，Docker 项目甚至改名成了 Moby。但 Docker 的 API 却一直保证了良好的兼容性，有着完善的版本管理策略和文档。
