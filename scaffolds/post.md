@@ -1,7 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-header-img: "img/post-default.jpg"
-cdn: 'header-on'
+# header-img: "img/post-default.jpg"
+# cdn: 'header-on'
 tags:
+# - aaa 
 ---
