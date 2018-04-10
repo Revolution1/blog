@@ -1,0 +1,12 @@
+[
+    {
+       "name":"etcd3-py",
+       "url":"https://github.com/Revolution1/etcd3-py",
+       "desc":"Python client for etcd v3 (Using gRPC-JSON-Gateway)"
+    },
+    {
+       "name":"Flask-WhooshAlchemyPlus",
+       "url":"https://github.com/Revolution1/Flask-WhooshAlchemyPlus",
+       "desc":"Whoosh indexing capabilities for Flask-SQLAlchemy"
+    }
+]

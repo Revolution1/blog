@@ -11,31 +11,31 @@ author: Cai Renjie
 language: zh-CN
 timezone: Asia/Shanghai
 
-cdn-url: "http://or4eklid8.bkt.clouddn.com/"      # images cdn path
+# cdn-url: "http://or4eklid8.bkt.clouddn.com/"      # images cdn path
 
-# Qiniu imageView2 API
-clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
-clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
-clip-post: "?" # you can custom post width and height
-clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+# # Qiniu imageView2 API
+# clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
+# clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+# clip-post: "?" # you can custom post width and height
+# clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
 
 
-# Sidebar settings
-sidebar: true
-sidebar-about-description: "We all want to change the world"
-sidebar-avatar: http://or4eklid8.bkt.clouddn.com/logo.png
+# # Sidebar settings
+# sidebar: true
+# sidebar-about-description: "We all want to change the world"
+# sidebar-avatar: http://or4eklid8.bkt.clouddn.com/logo.png
 
-#post default images
-post-default-img: http://or4eklid8.bkt.clouddn.com/post-default.jpg
-post-default-img-mobile: http://or4eklid8.bkt.clouddn.com/post-default.jpg
+# #post default images
+# post-default-img: http://or4eklid8.bkt.clouddn.com/post-default.jpg
+# post-default-img-mobile: http://or4eklid8.bkt.clouddn.com/post-default.jpg
 
-featured-tags: true  
-featured-condition-size: 1     # A tag will be featured if the size of 	it is more than this condition value
+# featured-tags: true  
+# featured-condition-size: 1     # A tag will be featured if the size of 	it is more than this condition value
 
-disqus_username: kyonr
+# disqus_username: kyonr
 
-archive:
-  title: ARCHIVE
+# archive:
+#   title: ARCHIVE
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -45,43 +45,43 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # SNS
-github_username: revolution1     # modify this account to yours
-weibo_username: 3185832602      # the footer woule be auto-updated.
+# github_username: revolution1     # modify this account to yours
+# weibo_username: 3185832602      # the footer woule be auto-updated.
 
 # live2d:
 #   model: nipsilon
 #   bottom: -60
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+# source_dir: source
+# public_dir: public
+# tag_dir: tags
+# archive_dir: archives
+# category_dir: categories
+# code_dir: downloads/code
+# i18n_dir: :lang
+# skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+# new_post_name: :title.md # File name of new posts
+# default_layout: post
+# titlecase: false # Transform title into titlecase
+# external_link: true # Open external links in new tab
+# filename_case: 0
+# render_drafts: false
+# post_asset_folder: false
+# relative_link: false
+# future: true
+# highlight:
+#   enable: true
+#   line_number: true
+#   auto_detect: false
+#   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+# default_category: uncategorized
+# category_map:
+# tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -98,7 +98,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-Anisina
+theme: hexo-theme-cactus # https://github.com/probberechts/hexo-theme-cactus
 # theme: landscape
 
 markdown: 
@@ -139,3 +139,30 @@ deploy:
   # ignore_pattern: regexp  # whatever file that matches the regexp will be ignored when deploying
 
 ga_track_id: UA-100695560-1
+
+# cactus
+theme_config:
+  colorscheme: white
+
+  posts_overview:
+    show_all_posts: false
+    post_count: 10
+
+  google_analytics:
+    enabled: true
+    id: 'UA-100695560-1'
+
+  disqus:
+    enabled: true
+    shortname: kyonr
+
+  nav:
+    首页: /
+    关于: /about/
+    归档: /archives/
+    项目: http://github.com/revolution1
+    搜索: /search/
+  
+  social_links:
+    github: http://github.com/revolution1
+    # weibo: https://weibo.com/3185832602

@@ -1,0 +1,4 @@
+---
+title: search
+search: true
+---
