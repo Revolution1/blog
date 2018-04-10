@@ -156,6 +156,24 @@ theme_config:
     enabled: true
     shortname: kyonr
 
+  logo:
+    enabled: true
+    width: 50
+    height: 50
+    url: http://or4eklid8.bkt.clouddn.com/logo.png
+    gravatar: false
+
+  favicon: 
+    desktop:
+      url: /images/logo.ico
+      gravatar: false
+    android:
+      url: /images/logo192x192.png
+      gravatar: false
+    apple:
+      url: /images/logo180x180.png
+      gravatar: false
+
   nav:
     首页: /
     关于: /about/
