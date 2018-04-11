@@ -3,8 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Revolution1
-SEOTitle: Revol's Blog          # check out docs for more detail
+# title: Revolution1
+# SEOTitle: Revol's Blog          # check out docs for more detail
+title: Revol's Blog          # check out docs for more detail
 subtitle: We all want to change the world
 description: Thoughts, codes, etc.
 author: Cai Renjie
