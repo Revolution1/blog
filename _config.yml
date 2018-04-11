@@ -101,7 +101,13 @@ pagination_dir: page
 theme: hexo-theme-cactus # https://github.com/probberechts/hexo-theme-cactus
 # theme: landscape
 
+# https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
 markdown: 
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkSymbol: ''
   render:
     html: true
 	plugins:   
@@ -112,10 +118,14 @@ markdown:
 		- markdown-it-sup    
 		- markdown-it-emoji
 
-toc:
-  maxdepth: 3
-  class: toc
-  slugify: transliteration
+# toc:
+#   maxdepth: 3
+#   class: toc
+#   slugify: transliteration
+  # anchor:
+  #   position: 'after'
+  #   symbol: ''
+  #   style: 'header-anchor'
 
 translate_title:
   translate_way: baidu    #google | baidu | youdao
@@ -143,6 +153,8 @@ ga_track_id: UA-100695560-1
 # cactus
 theme_config:
   colorscheme: white
+
+  highlight: vs
 
   posts_overview:
     show_all_posts: false
