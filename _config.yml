@@ -100,7 +100,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-cactus # https://github.com/probberechts/hexo-theme-cactus
+theme: hexo-theme-cactus-mod # https://github.com/probberechts/hexo-theme-cactus
 # theme: landscape
 
 # https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration

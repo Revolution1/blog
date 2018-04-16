@@ -1,22 +1,29 @@
 ---
 title: gallery
-photos:
-- http://or4eklid8.bkt.clouddn.com/photo/bbq-oven.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/bronze-statue.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/cameras-in-subway.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/girl-and-her-dog.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/girl-in-the-window-with-flower.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/large-format-camera.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/mystery-light-bulb.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/pan-yu-street.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/peggie.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/white-house.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/wooden-lamp.jpg
-- http://or4eklid8.bkt.clouddn.com/photo/wu.jpg
+layout: gallery
+qiniu_photos:
+- url: http://or4eklid8.bkt.clouddn.com/photo/bbq-oven.jpg
+  name: 容器大会旁的烧烤炉
+- url: http://or4eklid8.bkt.clouddn.com/photo/bronze-statue.jpg
+  name: 商业街的雕像
+- url: http://or4eklid8.bkt.clouddn.com/photo/cameras-in-subway.jpg
+  name: 在地铁中拍摄的学生
+- url: http://or4eklid8.bkt.clouddn.com/photo/girl-and-her-dog.jpg
+  name: 商业街遛狗的女生
+- url: http://or4eklid8.bkt.clouddn.com/photo/girl-in-the-window-with-flower.jpg
+  name: 绍兴古镇小店窗上的画
+- url: http://or4eklid8.bkt.clouddn.com/photo/large-format-camera.jpg
+  name: 大画幅相机
+- url: http://or4eklid8.bkt.clouddn.com/photo/mystery-light-bulb.jpg
+  name: 灯
+- url: http://or4eklid8.bkt.clouddn.com/photo/pan-yu-street.jpg
+  name: 番禺路
+- url: http://or4eklid8.bkt.clouddn.com/photo/peggie.jpg
+  name: 小猪佩奇与婴儿车
+- url: http://or4eklid8.bkt.clouddn.com/photo/white-house.jpg
+  name: 容器大会上的白色洋楼
+- url: http://or4eklid8.bkt.clouddn.com/photo/wooden-lamp.jpg
+  name: 台灯木人
+- url: http://or4eklid8.bkt.clouddn.com/photo/wu.jpg
+  name: 绍兴古镇的井盖
 ---
-
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<link href="https://cdn.bootcss.com/lightgallery/1.6.9/css/lightgallery.min.css" rel="stylesheet">
-<!-- <script src="https://cdn.bootcss.com/lightgallery/1.6.9/js/lightgallery.js"></script> -->
-<script src="https://cdn.bootcss.com/lightgallery/1.6.9/js/lightgallery-all.js"></script>
-<script>jQuery('.article-gallery').lightGallery();</script>

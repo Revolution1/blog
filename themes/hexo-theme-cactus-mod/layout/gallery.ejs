@@ -1,0 +1,17 @@
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <% if (page.search) { %>
+    <%- partial('_partial/search') %>
+  <% } %>
+  <% if (page.qiniu_photos && page.qiniu_photos.length) { %>
+    <div class="article-gallery">
+        <% page.qiniu_photos.forEach(function(photo, i) { %>
+        <a class="gallery-item" href="<%- url_for(photo.url) %>" rel="gallery_<%= page._id %>">
+            <img src="<%- url_for(photo.url) %>-thumbnail" alt="<%- photo.name %>" itemprop="image" />
+        </a>
+        <% }) %>
+    </div>
+  <% } %>
+  <div class="content" itemprop="articleBody">
+    <%- page.content %>
+  </div>
+</article>
