@@ -1,6 +1,15 @@
 /**
  * Sets up Justified Gallery.
  */
+
+if (!!$.prototype.lightGallery) {
+  var lgOptions = {
+    showThumbByDefault: false,
+    subHtmlSelectorRelative: true
+  };
+  $('.article-gallery').lightGallery(lgOptions);
+}
+
 if (!!$.prototype.justifiedGallery) {
   var options = {
     rowHeight: 140,

@@ -3,27 +3,39 @@ title: gallery
 layout: gallery
 qiniu_photos:
 - url: http://or4eklid8.bkt.clouddn.com/photo/bbq-oven.jpg
-  name: 容器大会旁的烧烤炉
+  name: 烧烤炉
+  caption: 好处 MeetBest 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/bronze-statue.jpg
-  name: 商业街的雕像
+  name: 雕像
+  caption: 幸福里 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/cameras-in-subway.jpg
-  name: 在地铁中拍摄的学生
+  name: 拍摄短片的学生
+  caption: 地铁10号线 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/girl-and-her-dog.jpg
-  name: 商业街遛狗的女生
+  name: 女生
+  caption: 幸福里 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/girl-in-the-window-with-flower.jpg
-  name: 绍兴古镇小店窗上的画
+  name: 画
+  caption: 古镇 绍兴 18年4月6日
+- url: http://or4eklid8.bkt.clouddn.com/photo/peggie.jpg
+  name: 婴儿车
+  caption: 绍兴东湖 18年4月6日
+- url: http://or4eklid8.bkt.clouddn.com/photo/wu.jpg
+  name: 污水井盖
+  caption: 古镇 绍兴 18年4月6日
 - url: http://or4eklid8.bkt.clouddn.com/photo/large-format-camera.jpg
-  name: 大画幅相机
+  name: 大画幅
+  caption: 画英雄ART 杭州 18年4月14日
 - url: http://or4eklid8.bkt.clouddn.com/photo/mystery-light-bulb.jpg
   name: 灯
+  caption: 幸福里 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/pan-yu-street.jpg
   name: 番禺路
-- url: http://or4eklid8.bkt.clouddn.com/photo/peggie.jpg
-  name: 小猪佩奇与婴儿车
+  caption: 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/white-house.jpg
-  name: 容器大会上的白色洋楼
+  name: 白色洋楼
+  caption: 好处 MeetBest 上海 18年3月24日
 - url: http://or4eklid8.bkt.clouddn.com/photo/wooden-lamp.jpg
-  name: 台灯木人
-- url: http://or4eklid8.bkt.clouddn.com/photo/wu.jpg
-  name: 绍兴古镇的井盖
+  name: 台灯
+  caption: 幸福里 上海 18年3月24日
 ---

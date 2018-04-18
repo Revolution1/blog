@@ -5,8 +5,11 @@
   <% if (page.qiniu_photos && page.qiniu_photos.length) { %>
     <div class="article-gallery">
         <% page.qiniu_photos.forEach(function(photo, i) { %>
-        <a class="gallery-item" href="<%- url_for(photo.url) %>" rel="gallery_<%= page._id %>">
-            <img src="<%- url_for(photo.url) %>-thumbnail" alt="<%- photo.name %>" itemprop="image" />
+        <a class="gallery-item"
+          href="<%- url_for(photo.url) %>"
+          data-sub-html="<h4><%- photo.name %></h4><p style='text-align: center;'><%- photo.caption %></p>"
+          rel="gallery_<%= page._id %>">
+            <img src="<%- url_for(photo.url) %>.thumb.jpg" alt="<%- photo.name %>" itemprop="image" />
         </a>
         <% }) %>
     </div>
