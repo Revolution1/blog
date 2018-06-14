@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.bootcss.com/konva/2.1.3/konva.js"></script>
+    <meta charset="utf-8">
+    <title>XuYang Generator</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            overflow: hidden;
+            background-color: #F0F0F0;
+        }
+
+        #container {
+            display: inline-block;
+        }
+
+        #ctrl {
+            display: inline-block;
+        }
+
+        label,
+        #left,
+        #right {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div id="ctrl">
+        <span>
+            <label for="left">左：</label>
+            <input onchange="onChange()" id="left" name="left" type="text" size="1">
+        </span>
+        <span>
+            <label for="right">右：</label>
+            <input onchange="onChange()" id="right" name="right" type="text" size="1">
+        </span>
+    </div>
+    <script>
+        var width = 600;
+        var height = 800;
+
+        var stage = new Konva.Stage({
+            container: 'container',
+            width: width,
+            height: height
+        });
+
+        var layer = new Konva.Layer();
+        var imageObj = new Image();
+        imageObj.onload = function () {
+
+            var xuyang = new Konva.Image({
+                x: 0,
+                y: 0,
+                image: imageObj,
+                width: width,
+                height: height
+            });
+
+            var fontSize = 35;
+            var Y = 355;
+            var lX = 235;
+            var rX = 350
+            leftText = '冷';
+            rightText = '漠';
+            document.getElementById('left').value = leftText;
+            document.getElementById('right').value = rightText;
+
+            var left = new Konva.Text({
+                x: lX,
+                y: Y - 2,
+                text: leftText,
+                fontSize: fontSize,
+                fontStyle: 'bold',
+                fontFamily: 'Calibri',
+                fill: 'white'
+            });
+            left.setOffset({
+                x: left.getWidth() / 2,
+                y: left.getHeight() / 2
+            });
+
+            var right = new Konva.Text({
+                x: rX,
+                y: Y + 2,
+                text: rightText,
+                fontSize: fontSize,
+                fontStyle: 'bold',
+                fontFamily: 'Calibri',
+                fill: 'white'
+            });
+            right.setOffset({
+                x: right.getWidth() / 2,
+                y: right.getHeight() / 2
+            });
+
+            // add the shape to the layer
+            layer.add(xuyang);
+            layer.add(left);
+            layer.add(right);
+
+            // add the layer to the stage
+            stage.add(layer);
+
+            window.left = left;
+            window.right = right;
+            window.layer = layer;
+        };
+        imageObj.src = 'http://or4eklid8.bkt.clouddn.com/xuyang.jpg';
+
+        function onChange() {
+            left.setText(document.getElementById('left').value);
+            right.setText(document.getElementById('right').value);
+            left.setOffset({
+                x: left.getWidth() / 2,
+                y: left.getHeight() / 2
+            });
+            right.setOffset({
+                x: right.getWidth() / 2,
+                y: right.getHeight() / 2
+            });
+            layer.draw()
+        }
+    </script>
+
+</body>
+
+</html>
